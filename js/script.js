@@ -15,54 +15,31 @@ var lista = document.getElementById('lista');
 var fizzBuzz = document.getElementById('fizzbuzz');
 
 // LOGICA
-// Faccio un ciclo di 100 giri
-for (var i = 1; i <= 100; i++) {
-
-  // Ad ogni giro associo il numero del contagiri "i" a "numero"
-  numero = i;
+// Faccio un ciclo di 100 giri, dove "numero" è il contagiri
+for (numero = 1; numero <= 100; numero++) {
 
   // Se il numero è sia divisibile per 5 che per 3,
   if ( ((numero % 3) == 0 ) && ((numero % 5) == 0)) {
 
-    // allora al posto di "numero" scrivi "FizzBuzz";
-    numero = 'FizzBuzz';
+    // allora al posto di "numero" scrivi "FizzBuzz", e il colore sarà rosso;
+    fizzBuzz.innerHTML += '<li>' + '<span class="red">' + 'FizzBuzz' + '<span>' + '</li>';
 
     // Altrimenti se il numero è divisibile solo per 3,
   } else if ( (numero % 3) == 0 ) {
 
-    // allora al posto di "numero" scrivi "Fizz";
-    numero = 'Fizz';
+    // allora al posto di "numero" scrivi "Fizz", e il colore sarà azzurro;
+    fizzBuzz.innerHTML += '<li>' + '<span class="lightblue">' + 'Fizz' + '<span>' + '</li>';
 
     // Altrimenti se il numero è divisibile solo per 5,
   } else if ( (numero % 5) == 0 ) {
 
-    // allora al posto di "numero" scrivi "Buzz";
-    numero = 'Buzz';
-  }
+    // allora al posto di "numero" scrivi "Buzz", e il colore sarà giallo;
+    fizzBuzz.innerHTML += '<li>' + '<span class="yellow">' + 'Buzz' + '<span>' + '</li>';
 
-  // STAMPA DELLA LISTA
-  // Se il "numero" è uguale a "FizzBuzz",
-  if (numero == 'FizzBuzz') {
+    // Altrimenti "numero" sarà un numero
+  } else {
 
-    // allora il colore sarà rosso;
-    fizzBuzz.innerHTML += '<li>' + '<span class="red">' + numero + '<span>' + '</li>';
-
-    // Altrimenti se il "numero" è uguale a "Fizz",
-  } else if (numero == 'Fizz') {
-
-    // allora il colore sarà azzurro;
-    fizzBuzz.innerHTML += '<li>' + '<span class="lightblue">' + numero + '<span>' + '</li>';
-
-    // Altrimenti se il "numero" è uguale a "Buzz",
-  } else if (numero == 'Buzz') {
-
-    // allora il colore sarà giallo;
-    fizzBuzz.innerHTML += '<li>' + '<span class="yellow">' + numero + '<span>' + '</li>';
-
-    // Altrimenti se il "numero" è un numero,
-  } else if (!(isNaN(numero))) {
-
-    // allora il colore sarà blu;
+    // Allora scrivi "numero", e il colore sarà blu;
     fizzBuzz.innerHTML += '<li>' + '<span class="blue">' + numero + '<span>' + '</li>';
   }
 }
