@@ -1,0 +1,135 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* COMMON */
+/* Margini */
+.margin10 {
+  margin: 10px 0;
+}
+
+.margin20 {
+  padding: 20px 0;
+}
+/* Fine Margini */
+
+/* Display */
+.hidden {
+  display: none;
+}
+
+.visibile {
+  display: block;
+}
+/* Fine Display */
+
+/* Colori */
+.yellow {
+  color: #e3e300;
+}
+
+.red {
+  color: #d00000;
+}
+
+.lightblue {
+  color: #b1e7ff;
+}
+
+.blue {
+  color: darkblue;
+}
+/* Fine Colori */
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1e7ff;
+  border-radius: 10px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkblue;
+}
+/* Fine Scrollbar */
+/* FINE COMMON */
+
+/* MAIN */
+main {
+  width: 70%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Stile titolo */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 3px solid #b1e7ff;
+}
+/* Fine Stile titolo */
+
+/* Intro */
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  color: darkblue;
+  font-size: 22px;
+}
+
+.btn {
+  padding: 5px 20px;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: none;
+  border: 1px solid darkblue;
+  border-radius: 20px;
+  background-color: #b1e7ff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: darkblue;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/* Fine Intro */
+
+/* Lista FizzBuzz */
+.label {
+  font-size: 20px;
+  color: darkblue;
+}
+
+.fizzbuzz {
+  padding: 20px 40px;
+  border: 2px solid #b1e7ff;
+}
+
+.fizzbuzz li {
+  color: lightgray;
+}
+.fizzbuzz li span {
+  margin-left: 10px;
+}
+/* Fine Lista FizzBuzz */
+/* FINE MAIN */
